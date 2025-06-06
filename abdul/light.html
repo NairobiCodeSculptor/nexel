@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>abdulrahmankitiavi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .mountain {
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .top-container:hover .mountain {
+    transform: translateY(10px);
+  }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.w3-display-container img {
+  animation: pulse 4s infinite;
+}
+      body {
+        margin: 0;
+        font-family: "Merriweather", serif;
+        text-align: center;
+      }
+
+      #one {
+        color: #66bfbf;
+        font-size: 5.625rem;
+        margin: 50px auto 0 auto;
+        font-family: "Sacramento", cursive;
+        animation: fadeIn 3s ease-in-out;
+      }
+
+      #two {
+        color: #66bfbf;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding-bottom: 10px;
+        animation: fadeIn 4s ease-in-out;
+      }
+
+      .top-container {
+        background-color: #e4f9f5;
+        padding-top: 100px;
+        position: relative;
+        animation: slideInFromTop 2s ease-out;
+      }
+      /* Add these new animations to your existing CSS */
+/* ===== ENTRANCE ANIMATIONS ===== */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== ELEMENT-SPECIFIC ANIMATIONS ===== */
+/* Profile Card */
+.w3-card-4 {
+  animation: slideInFromLeft 1s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.w3-card-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Skill Bars */
+.w3-round-xlarge {
+  transition: width 1.5s ease-in-out;
+}
+
+/* Experience/Education Cards */
+.w3-container.w3-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.w3-container.w3-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Social Media Icons */
+.w3-hover-opacity {
+  transition: all 0.3s ease;
+}
+
+.w3-hover-opacity:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Footer Button */
+.w3-button {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.w3-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Add this JavaScript at bottom before </body> */
+
+      .top-cloud {
+        position: absolute;
+        right: 300px;
+        top: 40px;
+        animation: floatClouds 5s infinite alternate;
+      }
+
+      .bottom-cloud {
+        position: absolute;
+        left: 250px;
+        bottom: 300px;
+        animation: floatClouds 6s infinite alternate-reverse;
+      }
+
+      .mountain {
+        width: 100%;
+        max-width: 600px;
+        animation: slideInFromBottom 2.5s ease-out;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInFromTop {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInFromBottom {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes floatClouds {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(20px);
+        }
+      }
+    </style>
+  </head>
+  <body class="w3-light-grey">
+    <div class="top-container">
+        <label id="theme-toggle-button">
+        <input type="checkbox" id="toggle">
+        <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
+            
+            
+            <g filter="url(#container)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+              <rect fill="#83cbd8" transform="translate(3.5 3.5)" rx="17.5" height="35" width="60.667" data-name="container" id="container"></rect>
+            </g>
+            
+            <g transform="translate(2.333 2.333)" id="button">
+              
+              <g data-name="sun" id="sun">
+                <g filter="url(#sun-outer)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                  <circle fill="#f8e664" transform="translate(5.83 5.83)" r="15.167" cy="15.167" cx="15.167" data-name="sun-outer" id="sun-outer-2"></circle>
+                </g>
+                <g filter="url(#sun)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                  <path fill="rgba(246,254,247,0.29)" transform="translate(9.33 9.33)" d="M11.667,0A11.667,11.667,0,1,1,0,11.667,11.667,11.667,0,0,1,11.667,0Z" data-name="sun" id="sun-3"></path>
+                </g>
+                <circle fill="#fcf4b9" transform="translate(8.167 8.167)" r="7" cy="7" cx="7" id="sun-inner"></circle>
+              </g>
+              
+                
+              <g data-name="moon" id="moon">
+                <g filter="url(#moon)" transform="matrix(1, 0, 0, 1, -31.5, -5.83)">
+                  <circle fill="#cce6ee" transform="translate(31.5 5.83)" r="15.167" cy="15.167" cx="15.167" data-name="moon" id="moon-3"></circle>
+                </g>
+                <g fill="#a6cad0" transform="translate(-24.415 -1.009)" id="patches">
+                  <circle transform="translate(43.009 4.496)" r="2" cy="2" cx="2"></circle>
+                  <circle transform="translate(39.366 17.952)" r="2" cy="2" cx="2" data-name="patch"></circle>
+                  <circle transform="translate(33.016 8.044)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                  <circle transform="translate(51.081 18.888)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                  <circle transform="translate(33.016 22.503)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                  <circle transform="translate(50.081 10.53)" r="1.5" cy="1.5" cx="1.5" data-name="patch"></circle>
+                </g>
+              </g>
+            </g>
+            
+            
+            <g filter="url(#cloud)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+              <path fill="#fff" transform="translate(-3466.47 -160.94)" d="M3512.81,173.815a4.463,4.463,0,0,1,2.243.62.95.95,0,0,1,.72-1.281,4.852,4.852,0,0,1,2.623.519c.034.02-.5-1.968.281-2.716a2.117,2.117,0,0,1,2.829-.274,1.821,1.821,0,0,1,.854,1.858c.063.037,2.594-.049,3.285,1.273s-.865,2.544-.807,2.626a12.192,12.192,0,0,1,2.278.892c.553.448,1.106,1.992-1.62,2.927a7.742,7.742,0,0,1-3.762-.3c-1.28-.49-1.181-2.65-1.137-2.624s-1.417,2.2-2.623,2.2a4.172,4.172,0,0,1-2.394-1.206,3.825,3.825,0,0,1-2.771.774c-3.429-.46-2.333-3.267-2.2-3.55A3.721,3.721,0,0,1,3512.81,173.815Z" data-name="cloud" id="cloud"></path>
+            </g>
+      
+            
+            <g fill="#def8ff" transform="translate(3.585 1.325)" id="stars">
+              <path transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)" d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z"></path>
+              <path transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)" d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z" data-name="star"></path>
+              <path transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)" d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z" data-name="star"></path>
+              <path transform="translate(12.677 0.388) rotate(104)" d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z" data-name="star"></path>
+              <path transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)" d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z" data-name="star"></path>
+              <path transform="translate(8.326 28.061) rotate(11)" d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z" data-name="star"></path>
+              <path transform="translate(5.012 5.962) rotate(172)" d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z" data-name="star"></path>
+              <path transform="translate(2.218 14.616) rotate(169)" d="M1.261,0,.774.571.114.3.487.967,0,1.538.728,1.32l.372.662.047-.749.728-.218L1.215.749Z" data-name="star"></path>
+            </g>
+          </g>
+        </svg>
+      </label>
+      <img class="top-cloud" src="./cloud.png" alt="cloud">
+      <div class="title-text">
+        <h1 id="one">I'm Abdulrahman.</h1>
+        <h2 id="two">a <span class="pro">pro</span>grammer and FULL-STACK developer.</h2>
+      </div>
+      <img class="bottom-cloud" src="./cloud.png" alt="cloud">
+      <img class="mountain " src="./mountain.png" alt="mountain-img">
+    </div>
+   <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="./abdulrahman.jpg" style="width:100%" alt="Avatar" class="w3-display-container img ">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Abdulrahman Juma</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Nairobi, KENYA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>abdulrahmankitiavi@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+254-1050-39697</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Graphic Design</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Digital Marketing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>web development</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>KISWAHILI</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
+          </div>
+          
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
+          </div>
+          <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
+          </div>
+          <p>CASCADING STYLE SHEET</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>TAILWIND CSS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>JAVA</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <p>JAVASCRIPT</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:89%"></div>
+          </div>
+          <p>JQUERY</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <p>NODEJS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+<div class="w3-twothird">
+
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me
+        </h2>
+        <div class="w3-container">
+            <p>I am Abdulrahman, a skilled web developer and software programmer with a passion for multimedia. I have extensive experience in WordPress development and am proficient in PHP, HTML, CSS, JavaScript, and MySQL. I specialize in creating and customizing themes and plugins, optimizing website performance, and ensuring secure, scalable, and responsive designs. I have a strong understanding of SEO principles and web performance, which allows me to deliver user-friendly and engaging digital solutions. Additionally, I excel at troubleshooting, debugging, and integrating APIs to ensure seamless functionality. With expertise in version control systems like Git, I am dedicated to building innovative and reliable multimedia platforms.</p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+        </h2>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Front End Developer / nexEL</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Currently working at Lenex, where I specialize in front-end development, creating dynamic and user-friendly web interfaces for a wide range of clients.</p>
+            <hr>
+        </div>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Web Designer / Marian Estate Agency</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023</h6>
+            <p>Designed and developed websites for real estate listings, focusing on enhancing user experience and creating visually appealing layouts.</p>
+            <hr>
+        </div>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Phone Repair Specialist / HQ</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022</h6>
+            <p>Repaired and maintained mobile phones, providing excellent service and solutions for hardware and software-related issues.</p><br>
+        </div>
+    </div>
+
+    <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+        </h2>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Mudasa Academy</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>High School</h6>
+            <p>Completed high school education, where I developed a passion for technology and problem-solving.</p>
+            <hr>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>Multimedia University</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Bachelors Degree in Mathematics and Computer Science</h6>
+            <p>A Bachelor’s Degree in Mathematics and Computer Science is an interdisciplinary program that combines mathematical theory with computational techniques. It covers areas such as calculus, linear algebra, discrete mathematics, algorithms, programming, data structures, artificial intelligence, machine learning, and software development. This degree prepares students for careers in software engineering, data science, cryptography, financial modeling, and research, among others. It is ideal for those who enjoy problem-solving, logical thinking, and applying mathematical concepts to real-world computing challenges.</p><br>
+        </div>
+        <hr>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>UDEMY</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>The complete Bootcamp Web Development Camp by Angela Yu</h6>
+          <p><em> Complete Web Development Bootcamp by Angela Yu </em>is a comprehensive course designed to teach full-stack web development from scratch. It covers HTML, CSS, JavaScript, Node.js, Express.js, EJS, React, MongoDB, and SQL, along with APIs, authentication, and deployment. The course includes hands-on projects to help learners build real-world applications and gain practical experience. It's beginner-friendly and ideal for anyone looking to become a web developer</p><br>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Udemy.com</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>100 days of python by Angela Yu</h6>
+        <p><em>100 Days of Python by Angela Yu </em>is a comprehensive online course designed to teach Python programming from beginner to advanced levels through a hands-on, project-based approach. Each day focuses on a specific topic, covering core concepts like data types, loops, functions, object-oriented programming, and working with libraries such as Pandas, Tkinter, and Flask. The course includes real-world projects like web scraping, game development, automation, and web applications. It’s structured to help learners build a strong foundation while applying their skills to practical coding challenges.</p><br>
+    </div>
+    <hr>
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>Multimedia University</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Bachelors Degree in Mathematics and Computer Science</h6>
+      <p>Earned a degree in Mathematics and Computer Science, focusing on software development, programming, and advanced mathematical techniques.</p><br>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Multimedia University</b></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Bachelors Degree in Mathematics and Computer Science</h6>
+    <p>Earned a degree in Mathematics and Computer Science, focusing on software development, programming, and advanced mathematical techniques.</p><br>
+</div>
+    </div>
+
+</div>
+<!-- End Right Column -->
+
+</div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+   <p class="w3-small">This website was made with Nexel & CO . Make your own Website today</p>
+   <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="./contact.html" target="_blank">Start now</a> <!-- End footer -->
+   </footer>
+   <script>
+    // Scroll-triggered animations
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.w3-container.w3-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+    
+      cards.forEach(card => observer.observe(card));
+    });
+    
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe & Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            max-width: 600px;
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .card__title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #222222;
+        }
+        .card__content {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555555;
+        }
+        .card__form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .card__form input {
+            padding: 10px;
+            flex: 1;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            outline: none;
+        }
+        .sign-up {
+            padding: 10px 20px;
+            background: #4e54c8;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .sign-up:hover {
+            background: #3a3f92;
+        }
+        .contact {
+            margin-top: 40px;
+            font-size: 1em;
+            line-height: 1.8;
+            color: #555555;
+        }
+        .contact a {
+            color: #4e54c8;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="card__title">Subscribe</span>
+            <p class="card__content">Get fresh websites, register your email to get contacted back.</p>
+            <div class="card__form">
+                <input placeholder="Your Email" type="text">
+                <button class="sign-up">Sign up</button>
+            </div>
+            <div class="contact">
+                <p>Contact us:</p>
+                <p>Phone: +254-70583-9282</p>
+                <p>Email: abdulrahmankitiavi@gmail.com</p>
+                <p>Follow us: 
+                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> |
+                    <a href="https://snapchat.com/add/yourprofile" target="_blank">Snapchat</a> |
+                    <a href="https://tiktok.com/@yourprofile" target="_blank">TikTok</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
